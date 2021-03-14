@@ -1,0 +1,30 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "development"
+    },
+    {
+        "ParameterKey": "InstanceType",
+        "ParameterValue": "t2.micro"
+    },
+    {
+        "ParameterKey": "ClusterSize",
+        "ParameterValue": "1"
+    },
+    {
+        "ParameterKey": "VPC",
+        "ParameterValue": "vpc-a4fc13c2"
+    },
+    {
+        "ParameterKey": "Subnets",
+        "ParameterValue": "subnet-b8583fe3"
+    },
+    {
+        "ParameterKey": "SecurityGroup",
+        "ParameterValue": "sg-ebe70899"
+    },
+    {
+        "ParameterKey": "ECSAMI",
+        "ParameterValue": "ami-02b0be10b5499d608"
+    }
+]

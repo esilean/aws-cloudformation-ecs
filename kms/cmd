@@ -1,0 +1,9 @@
+# Create stack
+aws cloudformation create-stack --stack-name aws-kmskey --template-body file://cloudformation/kms/kms.yml
+
+# Get output values from stack
+aws cloudformation describe-stacks --stack-name aws-kmskey --query 
+"Stacks[0].Outputs[?OutputKey==`KMSKey`]"
+
+# Delete stack
+aws cloudformation delete-stack --stack-name aws-kmskey

@@ -1,0 +1,14 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "development"
+    },
+    {
+        "ParameterKey": "VPC",
+        "ParameterValue": "vpc-a4fc13c2"
+    },
+    {
+        "ParameterKey": "Subnets",
+        "ParameterValue": "subnet-b8583fe3,subnet-4fcc5206"
+    }
+]

@@ -1,0 +1,5 @@
+# Create stack
+aws cloudformation create-stack --stack-name aws-ebsvol --template-body file://cloudformation/ebs-volume/ebs-volume.yml
+
+# Delete stack
+aws cloudformation delete-stack --stack-name aws-ebsvol

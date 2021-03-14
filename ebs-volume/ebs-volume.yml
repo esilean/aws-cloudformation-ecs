@@ -1,0 +1,16 @@
+Description: >
+  This template creates an EBS Volume
+
+Resources:
+  EBSVolume:
+    Type: AWS::EC2::Volume
+    Properties: 
+      Size: 30
+      VolumeType: gp2
+      AvailabilityZone: sa-east-1a
+      KmsKeyId: 5640fa24-657f-46a6-9e9c-43b4aa6a0e7b
+      Encrypted: true
+Outputs:
+  EBSVolume:
+    Description: A reference to the EBS Volume
+    Value: !Ref EBSVolume

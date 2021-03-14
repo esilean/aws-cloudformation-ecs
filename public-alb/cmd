@@ -1,0 +1,9 @@
+# Create stack
+aws cloudformation create-stack --stack-name aws-public-alb --template-body file://cloudformation/public-alb/alb.yml --parameters file://cloudformation/public-alb/alb-param.json
+
+# Get output values from stack
+aws cloudformation describe-stacks --stack-name aws-public-alb --query 
+"Stacks[0].Outputs[?OutputKey==`ALBPublic` || OutputKey==`LoadBalancerUrl` || OutputKey==`HttpListener` || OutputKey==`HttpsListener`]"
+
+# Delete stack
+aws cloudformation delete-stack --stack-name aws-public-alb

@@ -1,0 +1,10 @@
+# Create stack
+aws cloudformation create-stack --stack-name aws-ecs-demo --template-body file://cloudformation/ecs-cluster/ecs-cluster.yml --parameters file://cloudformation/ecs-cluster/ecs-cluster-param.json --capabilities CAPABILITY_NAMED_IAM
+aws cloudformation create-stack --stack-name aws-ecs-homolog --template-body file://cloudformation/ecs-cluster/ecs-cluster.yml --parameters file://cloudformation/ecs-cluster/ecs-cluster-param.json --capabilities CAPABILITY_NAMED_IAM
+
+# Get output values from stack
+aws cloudformation describe-stacks --stack-name aws-ecs-demo --query 
+"Stacks[0].Outputs[?OutputKey==`Cluster` || OutputKey==`ECSServiceAutoScalingRole` || OutputKey==`ECSAutoScalingGroupName`]"
+
+# Delete stack
+aws cloudformation delete-stack --stack-name aws-ecs-demo

@@ -1,0 +1,5 @@
+# Create stack
+aws cloudformation create-stack --stack-name aws-nginx --template-body file://cloudformation/service-nginx/service.yml --parameters file://cloudformation/service-nginx/service-param.json
+
+# Delete stack
+aws cloudformation delete-stack --stack-name aws-nginx

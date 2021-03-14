@@ -1,0 +1,26 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "development"
+    },
+    {
+        "ParameterKey": "VPC",
+        "ParameterValue": "vpc-a4fc13c2"
+    },
+    {
+        "ParameterKey": "Cluster",
+        "ParameterValue": "development"
+    },
+    {
+        "ParameterKey": "ServiceName",
+        "ParameterValue": "nginx-development"
+    },
+    {
+        "ParameterKey": "PublicListener",
+        "ParameterValue": "arn:aws:elasticloadbalancing:sa-east-1:268919435141:listener/app/development/748d1f1fcb09fdd0/ed96c0a27a786040"
+    },
+    {
+        "ParameterKey": "ECSServiceAutoScalingRoleARN",
+        "ParameterValue": "arn:aws:iam::268919435141:role/aws-ecs-develop-ECSServiceAutoScalingRole-G3O2LPL99SAS"
+    }
+]
